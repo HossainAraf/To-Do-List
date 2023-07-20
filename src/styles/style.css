@@ -1,3 +1,5 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
 * {
   margin: 0;
   padding: 5%;
@@ -8,4 +10,42 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+#heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efe0e0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efe0e0;
+}
+
+form svg {
+  width: 50px;
+  rotate: 270deg;
+}
+
+#to-do-list {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid #efe0e0;
+}
+
+.rendered-item {
+  display: flex;
+  width: 100%;
+}
+
+hr {
+  background-color: blue;
 }
