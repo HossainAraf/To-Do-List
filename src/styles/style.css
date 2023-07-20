@@ -40,6 +40,7 @@ form {
 form svg {
   width: 50px;
   rotate: 270deg;
+  height: 1.5em;
 }
 
 #to-do-list {
@@ -67,7 +68,9 @@ form svg {
 }
 
 #heading svg {
-  width: 28px;
+  width: 50px;
+  rotate: 270deg;
+  height: 1.5em;
 }
 
 input {
@@ -95,4 +98,8 @@ h3 {
   border-bottom: 2px solid #f6f6f6;
   margin: 0;
   padding: 0;
+}
+
+#rendered-container svg {
+  height: 1.5em;
 }
