@@ -2,7 +2,7 @@
 
 * {
   margin: 1%;
-  padding: 5%;
+  padding: 1% 5%;
 }
 
 .container {
@@ -12,6 +12,7 @@
   align-items: center;
   border: 3px solid #f6f6f6;
   padding: 0;
+  margin: 0 20%;
 }
 
 #heading {
@@ -44,6 +45,7 @@ form svg {
 #to-do-list {
   width: 100%;
   display: flex;
+  flex-direction: column;
   border-bottom: 2px solid #f6f6f6;
   padding: 0;
   margin: 0;
@@ -78,8 +80,19 @@ input {
   display: flex;
   width: 100%;
   justify-content: flex-start;
+  padding: 0 5%;
+  align-items: center;
 }
 
 h3 {
   font-size: 24px;
+}
+
+#rendered-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #f6f6f6;
+  margin: 0;
+  padding: 0;
 }
