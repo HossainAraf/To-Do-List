@@ -1,7 +1,7 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
 * {
-  margin: 0;
+  margin: 1%;
   padding: 5%;
 }
 
@@ -9,14 +9,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
+  border: 3px solid #f6f6f6;
+  padding: 0;
 }
 
 #heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #efe0e0;
+  border-bottom: 2px solid #f6f6f6;
+  width: 100%;
+  padding: 0;
 }
 
 h1 {
@@ -27,7 +31,9 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #efe0e0;
+  border-bottom: 2px solid #f6f6f6;
+  width: 100%;
+  padding: 0;
 }
 
 form svg {
@@ -38,14 +44,37 @@ form svg {
 #to-do-list {
   width: 100%;
   display: flex;
-  border-bottom: 2px solid #efe0e0;
+  border-bottom: 2px solid #f6f6f6;
+  padding: 0;
+  margin: 0;
+}
+
+#btn-clear {
+  width: 100%;
+  background-color: #f6f6f6;
+  border: none;
+  font-size: 24px;
+  padding: 6px;
+  margin: 0;
+}
+
+#heading svg {
+  width: 28px;
+}
+
+input {
+  border: none;
+  font-size: 20px;
+  font-style: italic;
 }
 
 .rendered-item {
   display: flex;
   width: 100%;
+  justify-content: flex-start;
 }
 
-hr {
-  background-color: blue;
+.rendered-item svg {
+  align-self: flex-start;
+  padding-left: 0;
 }
