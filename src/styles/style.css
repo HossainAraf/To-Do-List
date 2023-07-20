@@ -47,6 +47,7 @@ form svg {
   border-bottom: 2px solid #f6f6f6;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 #btn-clear {
@@ -56,6 +57,11 @@ form svg {
   font-size: 24px;
   padding: 6px;
   margin: 0;
+}
+
+.rendered-item svg {
+  align-self: flex-start;
+  padding-left: 0;
 }
 
 #heading svg {
@@ -74,7 +80,6 @@ input {
   justify-content: flex-start;
 }
 
-.rendered-item svg {
-  align-self: flex-start;
-  padding-left: 0;
+h3 {
+  font-size: 24px;
 }
