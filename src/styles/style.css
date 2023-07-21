@@ -1,0 +1,105 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+* {
+  margin: 1%;
+  padding: 1% 5%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #f6f6f6;
+  padding: 0;
+  margin: 0 20%;
+}
+
+#heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f6f6f6;
+  width: 100%;
+  padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f6f6f6;
+  width: 100%;
+  padding: 0;
+}
+
+form svg {
+  width: 50px;
+  rotate: 270deg;
+  height: 1.5em;
+}
+
+#to-do-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #f6f6f6;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+#btn-clear {
+  width: 100%;
+  background-color: #f6f6f6;
+  border: none;
+  font-size: 24px;
+  padding: 6px;
+  margin: 0;
+}
+
+.rendered-item svg {
+  align-self: flex-start;
+  padding-left: 0;
+}
+
+#heading svg {
+  width: 50px;
+  rotate: 270deg;
+  height: 1.5em;
+}
+
+input {
+  border: none;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.rendered-item {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0 5%;
+  align-items: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+#rendered-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+#rendered-container svg {
+  height: 1.5em;
+}
