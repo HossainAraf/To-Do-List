@@ -8,7 +8,6 @@
   margin: 0;
 }
 
-
 form {
   padding: 2px;
 }
@@ -105,4 +104,25 @@ div#clear {
   padding: 20px;
   font-size: medium;
   background-color: #f6f6f6;
+}
+
+.checkbox {
+  padding-right: 10px;
+}
+
+button#formButton {
+  padding: 5px;
+}
+
+.delete {
+  padding-right: 10px;
+}
+
+.description {
+  flex-grow: 2;
+}
+
+input#formInput {
+  border: none;
+  padding: 15px 10px;
 }

@@ -1,4 +1,3 @@
-
 import { tasks } from './add-remove.js';
 import arrow from './img/arrow.svg';
 
@@ -21,7 +20,6 @@ document.getElementById('wrapper').appendChild(formContainer);
 const form = document.createElement('form');
 form.id = 'form';
 document.getElementById('form-container').appendChild(form);
-
 
 const formInput = document.createElement('input');
 formInput.id = 'formInput';

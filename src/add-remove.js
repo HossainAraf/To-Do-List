@@ -1,4 +1,4 @@
-
+// eslint-disable-next-line import/no-cycle
 import renderTodoList from './display.js';
 
 export class Task {
@@ -8,7 +8,6 @@ export class Task {
     this.index = index;
   }
 }
-
 
 export const tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : [];
 
@@ -82,4 +81,3 @@ export function listenForEdit() {
   const todoListContainer = document.getElementById('todo');
   todoListContainer.addEventListener('input', handleTaskDescriptionEdit);
 }
-
