@@ -125,4 +125,10 @@ button#formButton {
 input#formInput {
   border: none;
   padding: 15px 10px;
+  flex-basis: 97%;
+}
+
+#form {
+  display: flex;
+  flex-direction: row;
 }
