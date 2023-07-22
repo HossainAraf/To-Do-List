@@ -1,5 +1,5 @@
 import AddList from './todo.js';
-import './styles/style.css'
+import './styles/style.css';
 
 const myList = new AddList();
 myList.displayList();
