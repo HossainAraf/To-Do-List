@@ -1,9 +1,27 @@
-import generateJoke from './generateJoke.js';
-import './styles/main.scss';
-import './styles/style.css';
-import twitter from './img/twitter.svg';
+import AddList from './todo.js';
 
-const twit = document.querySelector('#tw');
-twit.src = twitter;
+const myList = new AddList();
+myList.displayList();
 
-// console.log(generateJoke());
+function todoCheckbox() {
+  const checkboxes = document.querySelectorAll('.edit-text');
+  checkboxes.forEach((checkbox) => {
+    const index = checkbox.parentNode.querySelector('.editBtn').getAttribute('data-index');
+    const editInput = checkbox.parentNode.querySelector('.editBtn');
+    const { completed } = myList.todoDetails[index];
+
+    checkbox.checked = completed;
+    editInput.classList.toggle('completed', completed);
+
+    checkbox.addEventListener('change', (event) => {
+      const isChecked = event.target.checked;
+      editInput.classList.toggle('completed', isChecked);
+      myList.todoDetails[index].completed = isChecked;
+      localStorage.setItem('todoData', JSON.stringify(myList.todoDetails));
+    });
+  });
+}
+
+});
+
+window.addEventListener('DOMContentLoaded', todoCheckbox);
