@@ -89,7 +89,3 @@ button {
   content: "\f2f1";
   color: cornflowerblue;
 }
-
-.fa-solid, .fas {
-  rotate: 90deg;
-}
