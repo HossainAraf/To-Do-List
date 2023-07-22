@@ -1,105 +1,91 @@
-@import '~@fortawesome/fontawesome-free/css/all.css';
-
 * {
-  margin: 1%;
-  padding: 1% 5%;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  border: 3px solid #f6f6f6;
-  padding: 0;
-  margin: 0 20%;
-}
-
-#heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #f6f6f6;
-  width: 100%;
-  padding: 0;
-}
-
-h1 {
+  margin: 5px;
+  padding: 10px;
   font-size: 24px;
 }
 
-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #f6f6f6;
-  width: 100%;
-  padding: 0;
-}
-
-form svg {
-  width: 50px;
-  rotate: 270deg;
-  height: 1.5em;
-}
-
-#to-do-list {
-  width: 100%;
+.card {
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid #f6f6f6;
-  padding: 0;
-  margin: 0;
+  width: 75%;
+  margin: 10rem auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.head {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 10px 10px;
 }
 
-#btn-clear {
-  width: 100%;
-  background-color: #f6f6f6;
-  border: none;
-  font-size: 24px;
-  padding: 6px;
-  margin: 0;
+.lists {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
 }
 
-.rendered-item svg {
-  align-self: flex-start;
-  padding-left: 0;
-}
-
-#heading svg {
-  width: 50px;
-  rotate: 270deg;
-  height: 1.5em;
+.lists li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
 }
 
 input {
   border: none;
-  font-size: 20px;
-  font-style: italic;
 }
 
-.rendered-item {
+input[type="text"]:focus {
+  outline: none;
+}
+
+.addData {
   display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  padding: 0 5%;
-  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
 }
 
-h3 {
-  font-size: 24px;
+button {
+  border: none;
+  background-color: #fff;
 }
 
-#rendered-container {
+.rowData {
   display: flex;
-  align-items: center;
-  width: 100%;
-  border-bottom: 2px solid #f6f6f6;
-  margin: 0;
-  padding: 0;
+  gap: 10px;
 }
 
-#rendered-container svg {
-  height: 1.5em;
+.completed {
+  text-decoration: 2px line-through red;
+}
+
+.clear-btn {
+  padding: 20px 0;
+}
+
+.clear-btn:hover {
+  color: red;
+}
+
+.fa-trash {
+  color: gray;
+}
+
+.fa-trash:hover {
+  color: red;
+}
+
+.fa-level-down-alt::before,
+.fa-turn-down::before {
+  content: "\f3be";
+  color: greenyellow;
+}
+
+.fa-rotate::before,
+.fa-sync-alt::before {
+  content: "\f2f1";
+  color: cornflowerblue;
 }
