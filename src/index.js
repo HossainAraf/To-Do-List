@@ -1,8 +1,6 @@
-import AddList from './todo.js';
 import './styles/style.css';
-
+import AddList from './modules/todo.js';
 const myList = new AddList();
-const myCrud = new CrudOperations();
 
 window.addEventListener('DOMContentLoaded', myList.displayList.bind(myList));
 
