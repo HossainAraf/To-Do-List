@@ -1,5 +1,8 @@
 import './styles/style.css';
 import AddList from './modules/todo.js';
+import CrudOperations from './modules/int.js';
+
+const myCrud = new CrudOperations();
 const myList = new AddList();
 
 window.addEventListener('DOMContentLoaded', myList.displayList.bind(myList));
