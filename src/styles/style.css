@@ -1,3 +1,95 @@
 * {
-  margin: 50px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 10rem auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 10px 10px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.lists li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+}
+
+input {
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.addData {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+button {
+  border: none;
+  background-color: #fff;
+}
+
+.rowData {
+  display: flex;
+  gap: 10px;
+}
+
+.completed {
+  text-decoration: 2px line-through red;
+}
+
+.clear-btn {
+  padding: 20px 0;
+}
+
+.clear-btn:hover {
+  color: red;
+}
+
+.fa-trash {
+  color: gray;
+}
+
+.fa-trash:hover {
+  color: red;
+}
+
+.fa-level-down-alt::before,
+.fa-turn-down::before {
+  content: "\f3be";
+  color: greenyellow;
+}
+
+.fa-rotate::before,
+.fa-sync-alt::before {
+  content: "\f2f1";
+  color: cornflowerblue;
+}
+
+.fa-solid, .fas {
+  rotate: 90deg;
 }

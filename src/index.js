@@ -1,4 +1,5 @@
 import AddList from './todo.js';
+import './styles/style.css'
 
 const myList = new AddList();
 myList.displayList();
@@ -21,7 +22,17 @@ function todoCheckbox() {
     });
   });
 }
-
+const addButton = document.getElementById('add-button');
+addButton.addEventListener('click', () => {
+  const task = document.getElementById('task').value.trim();
+  const completed = false;
+  const index = myList.todoDetails.length + 1;
+  if (task) {
+    myList.addRow(task, completed, index);
+    myList.displayList();
+    document.getElementById('task').value = '';
+    todoCheckbox();
+  }
 });
 
 window.addEventListener('DOMContentLoaded', todoCheckbox);

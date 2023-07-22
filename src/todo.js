@@ -15,7 +15,7 @@ export default class AddList {
                             <div class="rowData" > <input class="edit-text" type="checkbox"  ${this.todoDetails[i].completed ? 'checked' : ''} /> 
                             <input class="editBtn" type="text" value="${this.todoDetails[i].title}" data-index="${i}" readonly /> </div>
                             <button id="${this.todoDetails[i].index}" class="remove-btn"> <i class="fas fa-trash"></i></button>
-                        </li> <hr>`;
+                        </li>`;
       }
       const removeBtn = document.querySelectorAll('.remove-btn');
       const removeLine = document.querySelectorAll('.removeLine');
@@ -44,6 +44,24 @@ export default class AddList {
     }
   }
 
+  addRow(title, completed, index) {
+    const todo = { title, completed, index };
+    this.todoDetails.push(todo);
+    localStorage.setItem('todoData', JSON.stringify(this.todoDetails));
+  }
 
-  
+  deleteRow(index) {
+    this.todoDetails.splice(index, 1);
+    for (let i = index; i < this.todoDetails.length; i += 1) {
+      this.todoDetails[i].index = i + 1;
+    }
+    localStorage.setItem('todoData', JSON.stringify(this.todoDetails));
+    this.displayList();
+  }
+
+  updateRowTitle(index, newTitle) {
+    this.todoDetails[index].title = newTitle;
+    localStorage.setItem('todoData', JSON.stringify(this.todoDetails));
+    this.displayList();
+  }
 }
