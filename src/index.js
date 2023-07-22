@@ -2,37 +2,18 @@ import AddList from './todo.js';
 import './styles/style.css';
 
 const myList = new AddList();
-myList.displayList();
+const myCrud = new CrudOperations();
 
-function todoCheckbox() {
-  const checkboxes = document.querySelectorAll('.edit-text');
-  checkboxes.forEach((checkbox) => {
-    const index = checkbox.parentNode.querySelector('.editBtn').getAttribute('data-index');
-    const editInput = checkbox.parentNode.querySelector('.editBtn');
-    const { completed } = myList.todoDetails[index];
+window.addEventListener('DOMContentLoaded', myList.displayList.bind(myList));
 
-    checkbox.checked = completed;
-    editInput.classList.toggle('completed', completed);
-
-    checkbox.addEventListener('change', (event) => {
-      const isChecked = event.target.checked;
-      editInput.classList.toggle('completed', isChecked);
-      myList.todoDetails[index].completed = isChecked;
-      localStorage.setItem('todoData', JSON.stringify(myList.todoDetails));
-    });
-  });
-}
 const addButton = document.getElementById('add-button');
 addButton.addEventListener('click', () => {
   const task = document.getElementById('task').value.trim();
   const completed = false;
-  const index = myList.todoDetails.length + 1;
+  const index = myCrud.todoDetails.length + 1;
   if (task) {
-    myList.addRow(task, completed, index);
+    myCrud.addRow(task, completed, index);
     myList.displayList();
     document.getElementById('task').value = '';
-    todoCheckbox();
   }
 });
-
-window.addEventListener('DOMContentLoaded', todoCheckbox);
