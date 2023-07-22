@@ -1,6 +1,6 @@
 
 import { tasks } from './add-remove.js';
-import arrow from './assets/arrow.svg';
+import arrow from './img/arrow.svg';
 
 const todoHeading = document.createElement('div');
 todoHeading.id = 'todoHeading';

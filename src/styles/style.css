@@ -1,0 +1,108 @@
+
+* {
+  background-color: #f6f6f6;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  margin: 0;
+}
+
+
+form {
+  padding: 2px;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+img {
+  height: 20px;
+  width: 20px;
+}
+
+i {
+  color: lightgray;
+}
+
+input {
+  padding: 0;
+  width: 70vw;
+}
+
+div#todoHeading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  padding: 15px 10px;
+}
+
+div#todo {
+  justify-content: space-around;
+}
+
+.fas {
+  font-size: 1rem;
+}
+
+.todo-item {
+  display: flex;
+  font-size: medium;
+  padding: 15px 10px;
+  flex-direction: row;
+  border: 1px solid lightgray;
+}
+
+.todo-item i.fa.fa-trash {
+  color: lightgray;
+  visibility: hidden;
+}
+
+.todo-item:hover {
+  background-color: lightyellow;
+}
+
+.todo-item:hover i.fa.fa-trash {
+  visibility: visible;
+  color: grey;
+  font-size: medium;
+}
+
+.todo-item:hover i.fa.fa-trash:hover {
+  visibility: visible;
+  color: red;
+  font-size: larger;
+  cursor: pointer;
+}
+
+div#wrapper {
+  width: 80vw;
+  background-color: white;
+  margin: 10vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div#addList {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: grey;
+  font-style: italic;
+  font-size: medium;
+  border: 1px solid lightgray;
+  padding: 15px 10px;
+}
+
+div#clear {
+  display: flex;
+  justify-content: center;
+  border: 1px solid lightgray;
+  color: grey;
+  align-items: center;
+  padding: 20px;
+  font-size: medium;
+  background-color: #f6f6f6;
+}
