@@ -49,9 +49,7 @@ To Do List
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
 1. Add new task
-2. Dekete task
-3. Check any task
-4. Clear all tasks
+2. Delete task
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,8 +106,8 @@ Open index.html file either directly or using live server
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
-- [ ] Add tasks dynamically
 - [ ] Add interactivity
+- [ ] Clear all selected tasks at once
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
