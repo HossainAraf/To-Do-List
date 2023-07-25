@@ -35,8 +35,6 @@
   document.getElementById('addBtn').addEventListener('click', newElement);
 
 // remove task
-
-// Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
