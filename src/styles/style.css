@@ -103,3 +103,7 @@ h3 {
 #rendered-container svg {
   height: 1.5em;
 }
+
+#myUL li {
+  color:#56789876;
+}
