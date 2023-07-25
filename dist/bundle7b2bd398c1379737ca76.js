@@ -8686,26 +8686,6 @@ module.exports = __webpack_require__.p + "fa-v4compatibility.ttf";
 
 module.exports = __webpack_require__.p + "fa-v4compatibility.woff2";
 
-/***/ }),
-
-/***/ "./src/img/rotate.svg":
-/*!****************************!*\
-  !*** ./src/img/rotate.svg ***!
-  \****************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "rotate.svg";
-
-/***/ }),
-
-/***/ "./src/img/turn.svg":
-/*!**************************!*\
-  !*** ./src/img/turn.svg ***!
-  \**************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "turn.svg";
-
 /***/ })
 
 /******/ 	});
@@ -8853,35 +8833,62 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
-/* harmony import */ var _img_rotate_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/rotate.svg */ "./src/img/rotate.svg");
-/* harmony import */ var _img_turn_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/turn.svg */ "./src/img/turn.svg");
 
+// import { addNew } from './addRemove.js';
 
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+}
 
-document.querySelector('#reload').src = _img_rotate_svg__WEBPACK_IMPORTED_MODULE_1__;
-document.querySelector('#add-icon').src = _img_turn_svg__WEBPACK_IMPORTED_MODULE_2__;
-var toDoList = document.querySelector('#to-do-list');
-var listTask = [{
-  index: 0,
-  description: 'desc-1',
-  completed: true
-}, {
-  index: 1,
-  description: 'desc-2',
-  completed: false
-}, {
-  index: 2,
-  description: 'desc-3',
-  completed: true
-}];
-var renderToDoList = function renderToDoList() {
-  listTask.forEach(function (task, index) {
-    toDoList.innerHTML += "\n    <div id='rendered-container'>\n    <div id='".concat(index, "' class='rendered-item'>\n    <h3 id='rendered-text'>").concat(task.description, "</h3>\n    </div>\n    </div>\n    ");
-  });
-};
-window.addEventListener('load', renderToDoList);
+// const btnAddTask = document.querySelector('#btn-add-task');
+// btnAddTask.addEventListener('click', addNew);
+
+// let listTask =[];
+// // // btnAddTask.addEventListener('click', addNew);
+// const renderToDoList = () => {
+//   listTask.forEach((task, index) => {
+//     toDoList.innerHTML += `
+//     <div id='rendered-container'>
+//     <div id='${index}' class='rendered-item'>
+//     <svg class='${task.completed ? 'task-completed' : 'task-incomplete'}' xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H384zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>    
+//     <h3 id='rendered-text'>${task.description}</h3>
+//     </div>
+//     <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 128 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
+//     </div>
+//     `;
+//   });
+// };
+
+// // Create a new list item when clicking on the "Add" button
+// const newElement = () => {
+//   var li = document.createElement("li");
+//   var inputValue = document.getElementById("myInput").value;
+//   var t = document.createTextNode(inputValue);
+//   li.appendChild(t);
+//   if (inputValue === '') {
+//     alert("You must write something!");
+//   } else {
+//     document.getElementById("myUL").appendChild(li);
+//   }
+//   document.getElementById("myInput").value = "";
+
+// }
+
+// window.addEventListener('load', addNew);
+
+console.log('lkk');
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlefcca7ac37a8d202926e6.js.map
+//# sourceMappingURL=bundle7b2bd398c1379737ca76.js.map
