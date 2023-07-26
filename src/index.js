@@ -1,20 +1,20 @@
 import './styles/style.css';
 import AddList from './modules/todo.js';
-import CrudOperations from './modules/int.js';
+import Operations from './modules/int.js';
 
-const myCrud = new CrudOperations();
+const myOp = new Operations();
 const myList = new AddList();
 
 window.addEventListener('DOMContentLoaded', myList.displayList.bind(myList));
 
-const addButton = document.getElementById('add-button');
+const addButton = document.querySelector('#add-button');
 addButton.addEventListener('click', () => {
-  const task = document.getElementById('task').value.trim();
+  const task = document.querySelector('#task').value.trim();
   const completed = false;
-  const index = myCrud.todoDetails.length + 1;
+  const index = myOp.todoDetails.length + 1;
   if (task) {
-    myCrud.addRow(task, completed, index);
+    myOp.addRow(task, completed, index);
     myList.displayList();
-    document.getElementById('task').value = '';
+    document.querySelector('#task').value = '';
   }
 });
