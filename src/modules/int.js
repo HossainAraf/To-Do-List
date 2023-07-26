@@ -1,4 +1,4 @@
-export default class CrudOperations {
+export default class Operations {
   constructor() {
     const previousData = localStorage.getItem('todoData');
     this.todoDetails = previousData ? JSON.parse(previousData) : [];
