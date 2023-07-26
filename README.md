@@ -10,7 +10,7 @@
 
 - [📖 About the Project](#about-project)
 - [📖 Live demo](#live-demo)
-  - [🛠 Built With](#built-with)
+- [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
