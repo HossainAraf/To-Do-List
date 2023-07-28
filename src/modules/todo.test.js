@@ -3,8 +3,10 @@
  */
 
 import Operations from './int.js';
+import AddList from './todo.js';
 
 const myOp = new Operations();
+const myList = new AddList();
 
 document.body.innerHTML = `
 <section class="card">
@@ -39,11 +41,11 @@ describe('AddList', () => {
 });
 
 describe('Delete a task', () => {
-   test('Detele "First Task" using index', () => {
+  test('Detele "First Task" using index', () => {
     myOp.deleteRow(1, myList);
     expect(myOp.todoDetails).toHaveLength(1);
-    expect(myOp.todoDetails[0].description).toBe('Description 1');
+    expect(myOp.todoDetails[0].title).toBe('First Task');
     expect(myOp.todoDetails[0].completed).toBe(false);
-    expect(myOp.todoDetails[0].index).toBe(1)
+    expect(myOp.todoDetails[0].index).toBe(1);
   });
 });
