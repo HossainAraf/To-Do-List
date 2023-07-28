@@ -1,4 +1,3 @@
-import '../styles/style.css';
 import Operations from './int.js';
 
 const myOp = new Operations();
@@ -13,8 +12,12 @@ export default class AddList {
 
       for (let i = 0; i < myOp.todoDetails.length; i += 1) {
         row.innerHTML += `<li class="removeLine">
-                            <div class="rowData" > <input class="edit-text" type="checkbox"  ${myOp.todoDetails[i].completed ? 'checked' : ''} /> 
-                            <input class="editBtn" type="text" value="${myOp.todoDetails[i].title}" data-index="${i}" readonly /> </div>
+                            <div class="rowData" > <input class="edit-text" type="checkbox"  ${
+  myOp.todoDetails[i].completed ? 'checked' : ''
+} /> 
+                            <input class="editBtn" type="text" value="${
+  myOp.todoDetails[i].title
+}" data-index="${i}" readonly /> </div>
                             <button id="${i}" class="remove-btn"> <i class="fas fa-trash"></i></button>
                         </li> <hr>`;
       }
@@ -32,7 +35,9 @@ export default class AddList {
     editBtn.forEach((editElement) => {
       editElement.addEventListener('click', () => {
         const index = editElement.getAttribute('data-index');
-        const editInput = document.querySelector(`input.editBtn[data-index="${index}"]`);
+        const editInput = document.querySelector(
+          `input.editBtn[data-index="${index}"]`,
+        );
         editInput.readOnly = false;
         editInput.addEventListener('blur', (event) => {
           const newTitle = event.target.value;
@@ -45,7 +50,9 @@ export default class AddList {
     // -------------------checkbox code--------------------------
     const checkboxes = document.querySelectorAll('.edit-text');
     checkboxes.forEach((checkbox) => {
-      const index = checkbox.parentNode.querySelector('.editBtn').getAttribute('data-index');
+      const index = checkbox.parentNode
+        .querySelector('.editBtn')
+        .getAttribute('data-index');
       const editInput = checkbox.parentNode.querySelector('.editBtn');
       const { completed } = myOp.todoDetails[index];
 
