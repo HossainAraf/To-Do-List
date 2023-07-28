@@ -37,19 +37,11 @@
 1. HTML5
 2. CSS
 3. HTML-CSS linters
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-  </ul>
-</details>
- 
+4. 
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
 1. Add new task
-2. Dekete task
+2. Delete task
 3. Check any task
 4. Clear all tasks
 
@@ -101,13 +93,17 @@ Open index.html file either directly or using live server
 - GitHub: <a href="https://github.com/HossainAraf">HossainAraf </a>
 - LinkedIn: <a href="https://linkedin.com/in/md-arafat-hossain-111403275"> Md. Arafat Hossain </a>
 
+👤 Young Gaius
+- GitHub: <a href="https://github.com/Young-Gaius">Young-Gaius </a>
+- LinkedIn: <a href="https://www.linkedin.com/in/young-gaius-205624268"> Young-Gaius </a>
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 - [ ] Add tasks dynamically
 - [ ] Add interactivity
 
