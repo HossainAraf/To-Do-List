@@ -117,8 +117,9 @@ Open index.html file either directly or using live server
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] Add tasks dynamically
-- [ ] Add interactivity
+- [ ] Add Social media links
+- [ ] Update style
+- [ ] Add date & time
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
