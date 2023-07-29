@@ -89,13 +89,13 @@ Install with below command:
 ```sh
   cd <your disered folder name >
   npm install
+npm install webpack
 ```
 
 ### Usage
+### run-tests
+To run the project, execute the following: npm test
 
-To run the project, execute the following:
-
-Open index.html file either directly or using live server 
 
 <!-- AUTHORS -->
 
