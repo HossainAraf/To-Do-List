@@ -24,6 +24,15 @@ describe('Task manager', () => {
       },
     ];
   });
-
+  test('clrCompletedTasks should clear completed tasks', () => {
+    const task = {
+      index: 2,
+      description: 'This is Task 2',
+      completed: true,
+    };
+    tasks = addTask(task.description);
+    clrCompletedTasks(tasks);
+    expect(tasks).toHaveLength(1);
+    expect(tasks).not.toContain(tasks[2]);
   });
 });
