@@ -45,15 +45,18 @@
   <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Javascript">CSS</a></li>
+    <li><a href="https://webpack.js.org/">Webpack</a></li>
   </ul>
 </details>
- 
+
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
-1. Add new task
-2. Dekete task
-3. Check any task
-4. Clear all tasks
+1. Add a new task
+2. Delete tasks
+3. Edit tasks
+4. Check any task
+5. Clear all tasks
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,13 +89,13 @@ Install with below command:
 ```sh
   cd <your disered folder name >
   npm install
+npm install webpack
 ```
 
 ### Usage
+### run-tests
+To run the project, execute the following: npm test
 
-To run the project, execute the following:
-
-Open index.html file either directly or using live server 
 
 <!-- AUTHORS -->
 
@@ -103,15 +106,20 @@ Open index.html file either directly or using live server
 - GitHub: <a href="https://github.com/HossainAraf">HossainAraf </a>
 - LinkedIn: <a href="https://linkedin.com/in/md-arafat-hossain-111403275"> Md. Arafat Hossain </a>
 
+👤 Young Gaius
+- GitHub: <a href="https://github.com/Young-Gaius">Young-Gaius </a>
+- LinkedIn: <a href="https://www.linkedin.com/in/young-gaius-205624268"> Young-Gaius </a>
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-- [ ] Add tasks dynamically
-- [ ] Add interactivity
+- [ ] Add Social media links
+- [ ] Update style
+- [ ] Add date & time
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
