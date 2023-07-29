@@ -43,13 +43,20 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://developer.mozilla.
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Javascript">CSS</a></li>
+    <li><a href="https://webpack.js.org/">Webpack</a></li>
+  </ul>
+</details>
+
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
-1. Add new task
-2. Delete task
-3. Check any task
-4. Clear all tasks
+1. Add a new task
+2. Delete tasks
+3. Edit tasks
+4. Check any task
+5. Clear all tasks
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
