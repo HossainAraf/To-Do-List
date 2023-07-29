@@ -1,41 +1,20 @@
-import './style.css';
-import {
-  addTask,
-  renderTasks,
-  saveTasks,
-  clrCompletedTasks,
-} from './modules/addRmove.js';
+import './styles/style.css';
+import AddList from './modules/todo.js';
+import Operations from './modules/int.js';
 
-// Retrieve tasks from local storage if available, or initialize with an empty array
-let tasks;
+const myOp = new Operations();
+const myList = new AddList();
 
-try {
-  tasks = JSON.parse(localStorage.getItem('tasks')) ?? [];
-} catch (error) {
-  tasks = [];
-}
+window.addEventListener('DOMContentLoaded', myList.displayList.bind(myList));
 
-// Event listeners for adding new tasks
-const todoInput = document.getElementById('todo');
-todoInput.addEventListener('keypress', (event) => {
-  if (event.key === 'Enter') {
-    const todoDesc = todoInput.value;
-    if (todoDesc) {
-      const tasks = addTask(todoDesc);
-      saveTasks(tasks);
-      renderTasks();
-      todoInput.value = '';
-    }
+const addButton = document.querySelector('#add-button');
+addButton.addEventListener('click', () => {
+  const task = document.querySelector('#task').value.trim();
+  const completed = false;
+  const index = myOp.todoDetails.length + 1;
+  if (task) {
+    myOp.addRow(task, completed, index);
+    myList.displayList();
+    document.querySelector('#task').value = '';
   }
 });
-
-const completeBtn = document.querySelector('.complete');
-completeBtn.addEventListener('click', () => {
-  const taskList = document.getElementById('list');
-  const filteredTasks = clrCompletedTasks(tasks);
-  taskList.innerHTML = '';
-  saveTasks(filteredTasks);
-  renderTasks(filteredTasks);
-});
-
-window.addEventListener('load', renderTasks(tasks));
