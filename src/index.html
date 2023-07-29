@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
-    <section class="card">
-        <div class="head">
-            <p>To Do List</p>
-            <i class="fa-solid fa-rotate rotate"></i>
-        </div>
-        <hr>
-        <div class="addData">
-            <input id="task" type="text" placeholder="Add to your List...." required>
-            <button><i id="add-button" class="fa-solid fa-turn-down turnLeft"></i> </button>
-        </div>
-        <hr>
-        <ul id="lists" class="lists">
-                
-        </ul>
-        <button id="btn-clearAll" class="clear-btn" type="button">Clear all completed</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header></header>
+    <section class="task-container">
+      <div class="headine">
+        <h2>Today's To Do</h2>
+        <i class="fa fa-refresh" aria-hidden="true" id="refresh"></i>
+      </div>
+      <br />
+      <div class="input-container">
+        <input type="text" placeholder="Add to your list" id="todo" /><br />
+        <i class="fa fa-level-down" aria-hidden="true" id="addbtn"></i>
+      </div>
+      <br />
+      <ul id="list"></ul>
+      <button class="complete" id="complete">Clear all completed</button>
     </section>
-<!-- Script  -->
+
     <script type="module" src="./index.js"></script>
-</body>
+    <footer></footer>
+  </body>
 </html>

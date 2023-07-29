@@ -1,71 +1,44 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-module.exports = {
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+
+export default {
   mode: 'development',
-  entry: {
-    bundle: path.resolve(__dirname, 'src/index.js'),
-  },
+  entry: './src/index.js',
+  devtool: 'inline-source-map',
   output: {
-    path: path.resolve(__dirname, 'docs'),
-    filename: '[name][contenthash].js',
+    filename: 'main.js',
+    path: path.resolve(process.cwd(), 'dist'),
     clean: true,
-    assetModuleFilename: '[name][ext]',
-  },
-  devtool: 'source-map',
-  devServer: {
-    static: {
-      directory: path.resolve(__dirname, 'docs'),
-    },
-    port: 3000,
-    open: true,
-    hot: true,
-    compress: true,
-    historyApiFallback: true,
   },
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+
+        test: /\.css$/i,
+
+        use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.html$/i,
+        loader: 'html-loader',
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'fonts/[name].[ext]',
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
+
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+
         type: 'asset/resource',
+
       },
     ],
   },
   plugins: [
+
     new HtmlWebpackPlugin({
-      title: 'To Do List',
-      filename: 'index.html',
-      template: 'src/index.html',
+
+      title: 'Development',
+      template: './src/index.html',
+
     }),
-    // new BundleAnalyzerPlugin(),
   ],
+
 };
