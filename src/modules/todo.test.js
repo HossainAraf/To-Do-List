@@ -2,8 +2,8 @@
  * @jest-environment jsdom
  */
 
-import Operations from './int.js';
-import AddList from './todo.js';
+const Operations = require('./int.js');
+const AddList = require('./todo.js');
 
 const myOp = new Operations();
 const myList = new AddList();

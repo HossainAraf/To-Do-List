@@ -6,7 +6,12 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
-    "test": "jest --config jest.config.js"
+    "test": "jest ",
+    "jest": {
+      "transform": {
+        "^.+\\.js$": "babel-jest"
+      }
+    }
   },
   "keywords": [],
   "author": "",
@@ -37,8 +42,5 @@
     "webpack-bundle-analyzer": "^4.9.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  },
-  "jest": {
-    "testEnvironment": "jest-environment-jsdom"
   }
 }
