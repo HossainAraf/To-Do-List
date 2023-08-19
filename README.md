@@ -102,6 +102,7 @@ Open index.html file either directly or using live server
 
 - GitHub: <a href="https://github.com/HossainAraf">HossainAraf </a>
 - LinkedIn: <a href="https://linkedin.com/in/md-arafat-hossain-111403275"> Md. Arafat Hossain </a>
+- Twitter: <a href="https://twitter.com/HossainAraf99"> Md. Arafat Hossain </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
